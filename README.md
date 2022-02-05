@@ -13,4 +13,4 @@ Este é um projeto para colocar no Instagram como **Link** para minhas outras re
 - CSS 
     - SASS/SCSS
 
-![GitHub](thiago-barreto-r.github.io/Link-BioInstagram)
+[GitHub](https://thiago-barreto-r.github.io/Link-BioInstagram/)
