@@ -1,0 +1,101 @@
+.l__main {
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+
+    .l__container {
+
+        .sobre {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+
+            img {
+                margin: 0 auto;
+                border-radius: 50%;
+                width: 6rem;
+                height: 6rem;
+                margin-top: 1rem;
+            }
+
+            h1 {
+                text-align: center;
+                margin: .3rem 0 0 0;
+                font-size: 1rem;
+            }
+            
+            .name__perfil {
+                text-align: center;
+                font-size: .75rem;
+                opacity: .8;
+                line-height: 1.5rem;
+            }
+
+            .description {
+            padding: 0 .2rem;
+            text-align: center;
+            font-size: .8rem;
+            }
+        }
+
+        .list__links {
+            width: 100%;
+            margin-top: 1.4rem;
+
+            span {
+                margin: .4rem 0;
+                display: block;
+                width: 25rem;
+                transition: background-color .3s ease-in-out;
+                position: relative;
+
+                .link {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    padding: .8rem 0;
+                    font-size: 1.3rem;
+                    border: 1px solid rgba(104, 104, 107, 0.371);
+                    color: #fff;
+                    text-decoration: none;
+                    transition: .3s ease-in-out;
+
+                    i {
+                        position: absolute;
+                        left: 1rem;
+                        background: transparent;
+                    }
+                }
+
+                .link__facebook {
+                    
+                    &:hover {
+                        background-color: #4867aa;
+                    }
+                }
+                .link__twitter {
+                    
+                    &:hover {
+                        background-color: #5da9dd;
+                    }
+                }
+                .link__linkedin {
+                    
+                    &:hover {
+                        background-color: #0077b5;
+                    }
+                }
+                .link__github {
+                    
+                    &:hover {
+                        background-color: #1b1f23;
+                    }
+                }
+
+                .link--disabled {
+                    text-decoration: line-through;
+                    background-color: rgb(61, 61, 61);
+                }
+            }
+        }
+    }
+}

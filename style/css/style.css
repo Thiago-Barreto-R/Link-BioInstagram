@@ -1,0 +1,103 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #1b191d;
+}
+
+.container, .list__links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.l__main {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+.l__main .l__container .sobre {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.l__main .l__container .sobre img {
+  margin: 0 auto;
+  border-radius: 50%;
+  width: 6rem;
+  height: 6rem;
+  margin-top: 1rem;
+}
+.l__main .l__container .sobre h1 {
+  text-align: center;
+  margin: 0.3rem 0 0 0;
+  font-size: 1rem;
+}
+.l__main .l__container .sobre .name__perfil {
+  text-align: center;
+  font-size: 0.75rem;
+  opacity: 0.8;
+  line-height: 1.5rem;
+}
+.l__main .l__container .sobre .description {
+  padding: 0 0.2rem;
+  text-align: center;
+  font-size: 0.8rem;
+}
+.l__main .l__container .list__links {
+  width: 100%;
+  margin-top: 1.4rem;
+}
+.l__main .l__container .list__links span {
+  margin: 0.4rem 0;
+  display: block;
+  width: 25rem;
+  transition: background-color 0.3s ease-in-out;
+  position: relative;
+}
+.l__main .l__container .list__links span .link {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0.8rem 0;
+  font-size: 1.3rem;
+  border: 1px solid rgba(104, 104, 107, 0.371);
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+.l__main .l__container .list__links span .link i {
+  position: absolute;
+  left: 1rem;
+  background: transparent;
+}
+.l__main .l__container .list__links span .link__facebook:hover {
+  background-color: #4867aa;
+}
+.l__main .l__container .list__links span .link__twitter:hover {
+  background-color: #5da9dd;
+}
+.l__main .l__container .list__links span .link__linkedin:hover {
+  background-color: #0077b5;
+}
+.l__main .l__container .list__links span .link__github:hover {
+  background-color: #1b1f23;
+}
+.l__main .l__container .list__links span .link--disabled {
+  text-decoration: line-through;
+  background-color: #3d3d3d;
+}
+
+@media (max-width: 600px) {
+  .l__main .l__container .sobre h1 {
+    font-size: 1.2rem;
+  }
+  .l__main .l__container .sobre p {
+    font-size: 0.9rem;
+  }
+  .l__main .l__container .list__links span {
+    width: 90%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
