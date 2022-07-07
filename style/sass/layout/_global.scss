@@ -5,9 +5,43 @@
     background-color: rgb(27, 25, 29);
 }
 
+.l__main {
+    width: 100%;
+}
+
 .container, .list__links {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-direction: column;
+    width: 70%;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    gap: 1rem;
+    width: 50%;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+}
+p {
+    background-color: transparent;
+}
+i {
+    background-color: transparent;
 }

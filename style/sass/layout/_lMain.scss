@@ -40,61 +40,101 @@
         .list__links {
             width: 100%;
             margin-top: 1.4rem;
+            gap: 1rem;
 
-            span {
-                margin: .4rem 0;
-                display: block;
-                width: 25rem;
-                transition: background-color .3s ease-in-out;
+            .link {
+
+                width: 40%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #1b1f23;
+                padding: 1rem;
+                gap: 2rem;
                 position: relative;
 
-                .link {
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-around;
-                    padding: .8rem 0;
-                    font-size: 1.3rem;
-                    border: 1px solid rgba(104, 104, 107, 0.371);
-                    color: #fff;
-                    text-decoration: none;
-                    transition: .3s ease-in-out;
-
-                    i {
-                        position: absolute;
-                        left: 1rem;
-                        background: transparent;
-                    }
+                &::after {
+                    content: "";
+                    position: absolute;
+                    display: block;
+                    top: -2px;
+                    left: 0px;
+                    width: 2%;
+                    height: 15px;
+                    border-top: 1px solid white;
+                    border-left: 1px solid white;
+                    background-color: transparent;
+                    transition: .6s ease-in-out;
+                }
+                &::before {
+                    content: "";
+                    position: absolute;
+                    display: block;
+                    bottom: -2px;
+                    right: 0px;
+                    width: 2%;
+                    height: 15px;
+                    border-bottom: 1px solid white;
+                    border-right: 1px solid white;
+                    background-color: transparent;
+                    transition: .6s ease-in-out;
                 }
 
-                .link__facebook {
-                    
-                    &:hover {
-                        background-color: #4867aa;
-                    }
+                &:hover::after {
+                    width: calc(100% - 1px);
+                    height: 59px;
                 }
-                .link__twitter {
-                    
-                    &:hover {
-                        background-color: #5da9dd;
-                    }
+                &:hover::before {
+                    width: calc(100% - 1px);
+                    height: 59px;
                 }
-                .link__linkedin {
-                    
-                    &:hover {
-                        background-color: #0077b5;
-                    }
+            }
+
+            .link__facebook {
+
+                i {
+                    margin-left: -1rem;
                 }
-                .link__github {
-                    
-                    &:hover {
-                        background-color: #1b1f23;
-                    }
+                
+                &:hover {
+                    background-color: #4867aa;
                 }
 
-                .link--disabled {
-                    text-decoration: line-through;
-                    background-color: rgb(61, 61, 61);
+            }
+            .link__twitter {
+                i {
+                    margin-left: -2.5rem;
                 }
+                
+                &:hover {
+                    background-color: #5da9dd;
+                }
+            }
+            .link__linkedin {
+                i {
+                    margin-left: -1.9rem;
+                }
+                
+                &:hover {
+                    background-color: #0077b5;
+                }
+            }
+            .link__github {
+                i {
+                    margin-left: -2.5rem;
+                }
+                
+                &:hover {
+                    background-color: #1b1f23;
+                }
+            }
+
+            .link--disabled {
+                i {
+                    margin-left: -1.8rem;
+                }
+                text-decoration: line-through;
+                background-color: rgb(61, 61, 61);
             }
         }
     }
